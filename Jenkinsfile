@@ -6,7 +6,7 @@ pipeline {
                 sh './Env_setup.sh'
             }
         }
- 
+  
         stage('Build') { 
             steps {
                 sh 'mvn clean install'
