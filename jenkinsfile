@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'java1.9' }
+    agent { label 'java19' }
     stages {
         stage('Setup Environment') {
             steps {
