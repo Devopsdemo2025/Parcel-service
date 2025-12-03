@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'java' }
+    agent { label 'python' }
     stages {
         stage('Setup Environment') {
             steps {
