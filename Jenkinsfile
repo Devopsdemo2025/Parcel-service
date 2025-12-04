@@ -12,7 +12,7 @@ pipeline {
                 sh 'mvn clean install'  
             }
         }
-
+ 
         stage('Application') { 
             steps { 
                 sh 'mvn spring-boot:run'
