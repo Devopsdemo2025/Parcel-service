@@ -1,20 +1,20 @@
 pipeline {
-    agent { label 'java1.8' }
+    agent { label 'java1.9' }
     stages {
         stage('Setup Environment') {
             steps {
                 sh './Env_setup.sh'
             }
-        }
-  
-        stage('Build') { 
+        } 
+
+        stage('Build') {
             steps {
-                sh 'mvn clean install'
+                sh 'mvn clean install'  
             }
         }
-
-        stage('Application') {
-            steps {
+ 
+        stage('Application') { 
+            steps { 
                 sh 'mvn spring-boot:run'
 
                // sh 'java -jar target/simple-parcel-service-app-1.0-SNAPSHOT.jar'
