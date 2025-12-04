@@ -1,3 +1,5 @@
+Shell script to setup the environment.
+
 #!/bin/bash
 set -e
 echo "Starting Maven project setup..."
