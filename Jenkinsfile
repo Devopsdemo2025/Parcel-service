@@ -8,17 +8,26 @@ pipeline {
         } 
 
         stage('Build') {
-            steps { 
+          /*  steps { 
                 sh 'mvn clean install'   
-            }
+            }*/
+            dir('hello-world-war') {
+                    build 'install'
+                   }
         }
  
-        stage('Application') { 
+      /*  stage('Application') { 
             steps { 
                 sh 'mvn spring-boot:run'
-
-               // sh 'java -jar target/simple-parcel-service-app-1.0-SNAPSHOT.jar'
             }
+        }  */
+        stage('Application') {
+    steps {
+        script {
+            springBoot('run')
         }
+    }
+}
+
     }
 }
