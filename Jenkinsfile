@@ -12,9 +12,13 @@ pipeline {
           /*  steps { 
                 sh 'mvn clean install'   
             }*/
-            dir('Parcel-service') {
-                    build 'install'
-                   }
+           steps {
+                script {
+                    dir('Parcel-service') {
+                        build('install')
+                    }
+                }
+            }
         }
  
       /*  stage('Application') { 
