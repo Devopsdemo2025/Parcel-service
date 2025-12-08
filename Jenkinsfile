@@ -6,7 +6,7 @@ pipeline {
             steps {
                 sh './Env_setup.sh'
             }
-        } 
+        }  
 
         stage('Build') {
           /*  steps { 
