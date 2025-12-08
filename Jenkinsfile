@@ -14,9 +14,9 @@ pipeline {
             }*/
            steps {
                 script {
-                    dir('Parcel-service') {
+            //        dir('Parcel-service') {
                         build('install')
-                    }
+              //      }
                 }
             }
         }
@@ -29,9 +29,9 @@ pipeline {
         stage('Application') {
     steps {
         script {
-         dir('Parcel-service') {
+    //     dir('Parcel-service') {
             springBoot('run')
-         }
+      //   }
         }
     }
 }
