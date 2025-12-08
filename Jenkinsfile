@@ -12,7 +12,7 @@ pipeline {
           /*  steps { 
                 sh 'mvn clean install'   
             }*/
-            dir('hello-world-war') {
+            dir('Parcel-service') {
                     build 'install'
                    }
         }
