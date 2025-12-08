@@ -14,6 +14,7 @@ pipeline {
             }*/
            steps {
                 script {
+                     build('package') 
                         build('install')  
                 }
             }
