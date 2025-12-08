@@ -1,3 +1,4 @@
+@Library('sharedlib_pipeline') _
 pipeline {
     agent { label 'java1.9' }
     stages {
