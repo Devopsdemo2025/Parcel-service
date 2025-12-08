@@ -14,7 +14,7 @@ pipeline {
             }*/
            steps {
                 script {
-                        build('install') 
+                        build('install')  
                 }
             }
         }
