@@ -29,7 +29,9 @@ pipeline {
         stage('Application') {
     steps {
         script {
+         dir('Parcel-service') {
             springBoot('run')
+         }
         }
     }
 }
