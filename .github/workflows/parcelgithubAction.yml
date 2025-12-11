@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: self-hosted  # matches Jenkins agent label
 
-    steps:
+    steps: 
       - name: Checkout repository
         uses: actions/checkout@v4
 
